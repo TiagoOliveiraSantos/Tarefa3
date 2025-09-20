@@ -36,5 +36,13 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
 
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 3 ----------
 
+// ---------- COLE AQUI O CÓDIGO DO BOTÃO 8 ----------
+document.getElementById('btn-aluno8').addEventListener('click', () => {
+    const [val1, val2] = getValues();
+    if (val1 === null || val2 === null) return; // Interrompe se os valores forem inválidos
+    const resultado = val2 - val1; // subtração inversa
+    displayResult(resultado);
+});
+
 
 // etc...
